@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-verde: #028483;
+    --cor-cinza: #2A2A2A;
+    --cor-verde-esc: #014A4A;
+    --cor-azul-marinho: #071D2E;
+    --cor-azul: #003464;
+    --cor-branco:#FAFAFA;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+}
+
+.container{
+    max-width: 1224px;
+    margin: auto;
+}
+
+.divContainer-header{
+    background-color: var(--cor-cinza);
+}
+
+.header{
+    padding: 2rem;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-img{
+    width: 20%;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-list--item{
+    list-style: none;
+}
+
+.nav-list--link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--cor-branco);
+    font-size: 1.8rem;
+}
+
+.nav-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.nav-btn-item{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--cor-branco);
+    background-color: var(--cor-verde);
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+
+/* Termina a navbar */
+
+.divContainer-hero{
+    background-image: linear-gradient(to bottom, var(--cor-branco), #028484c2);
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-title{
+    font-size: 5rem;
+    color: var(--cor-cinza);
+}
+
+.hero-btn{
+    color: var(--cor-branco);
+    background-color: var(--cor-verde);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1.6rem 5rem;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    transition: all .3s ease-in-out;
+}
+
+.hero-btn:hover{
+    transform: scale(1.05);
+}
+
+.hero-img{
+    width: 50%;
+    margin-top: 3rem;
+}
+
+/* Termina o HERO */
+
+.divContainer-cursos{
+    background-color: var(--cor-branco);
+}
+
+.cursos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cursos-title{
+    color: var(--cor-azul-marinho);
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 7rem 0;
+}
+
+.cursos-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.cursos-card{
+    flex-basis: 35rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-direction: column;
+}
+
+.cursos-card--img{
+    width: 100%;
+    height: 18.3rem;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.cursos-card--title{
+    font-size: 2rem;
+    /* letter-spacing: .2rem; */
+    margin: 3rem 1rem 1rem 1rem;
+    /* flex-grow: 1; */
+    text-align: center;
+}
+
+.cursos-card--info{
+    font-size: 1.6rem;
+    letter-spacing: .15rem;
+    font-weight: 300;
+    margin: 1rem 1rem;
+    text-align: center;
+    /* flex-grow: 1; */
+}
+
+.cursos-btn{
+    color: var(--cor-branco);
+    background-color: var(--cor-verde);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1.6rem 5rem;
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+    border-radius: 0.5rem;
+    transition: all .3s ease-in-out;
+}
+
+.cursos-btn:hover{
+    transform: scale(1.05);
+}
+
+/* Termina o Cursos */
+
+.divContainer-escola{
+    background-color: var(--cor-verde-esc);
+}
+
+.escola{
+    display: flex;
+    align-items: center;
+}
+
+.escola-img{
+    width: 50%;
+    margin-top: 6rem;
+    display: block;
+
+}
+
+.escola-texts{
+    margin: 0 6rem;
+}
+
+.escola-texts--title{
+    font-size: 4rem;
+    color: var(--cor-branco);
+    margin-bottom: 5rem;
+}
+
+.escola-texts--info{
+    font-size: 1.8rem;
+    letter-spacing: .15rem;
+    font-weight: 300;
+    color: var(--cor-branco);
+}
+
+/* Termina escola */
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-title{
+    color: var(--cor-azul-marinho);
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 7rem 0 .5rem 0;
+}
+
+.form-card{
+    /* background-color: #003464; */
+    width: 70%;
+}
+
+.form-card--title{
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    margin: 3rem;
+}
+
+.form-card--info{
+    font-size: 1.6rem;
+    letter-spacing: .15rem;
+    font-weight: 500;
+    margin: 1rem 0 3rem 0;
+    text-align: center;
+}
+
+.form-btn{
+    color: var(--cor-branco);
+    background-color: var(--cor-verde);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1.6rem 5rem;
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+    border-radius: 0.5rem;
+    transition: all .3s ease-in-out;
+    border: none;
+}
+
+.form-btn:hover{
+    transform: scale(1.05);
+}
+
+.form-btn-delete{
+    color: var(--cor-branco);
+    background-color: #BB2D3B;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1.6rem 5rem;
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+    border-radius: 0.5rem;
+    transition: all .3s ease-in-out;
+    border: none;
+}
+
+.form-btn-delete:hover{
+    transform: scale(1.05);
+}
+
+.form-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.form-input{
+    width: 100%;
+    height: 5rem;
+    font-size: 2rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: .5rem;
+}
+
+.divContainer-contato{
+    background-color: var(--cor-branco);
+}
+
+.contato-title{
+    color: var(--cor-azul-marinho);
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 6rem 0;
+}
+
+.contato-map{
+    width: 80%;
+    height: 60vh;
+    margin: auto;
+    display: block;
+    border: none;
+    box-shadow: 0px 0px 1rem var(--cor-azul-marinho);
+}
+
+.contato-info{
+    margin: 6rem 0 2rem 0;
+    text-align: right;
+}
+
+.contato-info-p{
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+}
+
+/* Termina Contato */
+
+.divContainer-footer{
+    background-color: var(--cor-cinza);
+}
+
+.footer{
+    padding: .3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-img{
+    width: 20%;
+}
+
+.footer-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-list--item{
+    list-style: none;
+}
+
+.footer-list--link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--cor-branco);
+    font-size: 1.8rem;
+}
+
+.copy{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+}
+
+.copy-info{
+    color: var(--cor-branco);
+    font-size: 1.6rem;
+}
+
+.copy-info a{
+    color: var(--cor-branco);
+    text-decoration: none;
+}
+
+/* Termina Footer */
+
+@media (max-width: 1024px) {
+    .nav{
+        padding-right: 1rem;
+    }
+    
+    .hero-text{
+        padding: 3rem;
+    }
+
+    .escola-texts--title{
+        font-size: 3rem;
+    }
+
+    .escola-texts--info{
+        font-size: 1.5rem;
+    }
+
+    .contato-info{
+        margin: 6rem 2rem 2rem 0;
+    }
+}
+
+@media (max-width: 768px){
+    .nav{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .hero{
+        flex-direction: column;
+    }
+    
+    .escola{
+        flex-direction: column-reverse;
+    }
+
+    .escola-texts--title{
+        text-align: center;
+        margin: 5rem 0 2rem ;
+    }
+
+    .escola-texts--info{
+        text-align: center;
+    }
+
+    .footer{
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .copy{
+        flex-direction: column;
+        gap: .5rem;
+    }
+}
+
+@media (max-width: 425px){
+    .nav{
+        flex-direction: column;   
+    }
+
+    .nav-list--link{
+        font-size: 1.6rem;
+        margin-top: 2rem;
+    }
+    
+    .hero{
+        flex-direction: column;
+    }
+
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-title{
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .hero-btn{
+        font-size: 1.6rem;
+        width: fit-content;
+    }
+
+    .contato-info{
+        text-align: center;
+    }
+
+    .contato-info-p{
+        text-align: center;
+    }
+}

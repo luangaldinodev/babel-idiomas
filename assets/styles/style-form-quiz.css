@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-verde: #028483;
+    --cor-cinza: #2A2A2A;
+    --cor-verde-esc: #014A4A;
+    --cor-azul-marinho: #071D2E;
+    --cor-azul: #003464;
+    --cor-branco:#FAFAFA;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+}
+
+.container{
+    max-width: 1224px;
+    margin: auto;
+}
+
+.divContainer-header{
+    background-color: var(--cor-cinza);
+}
+
+.header{
+    padding: 2rem;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-img{
+    width: 20%;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-list--item{
+    list-style: none;
+}
+
+.nav-list--link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--cor-branco);
+    font-size: 1.8rem;
+}
+
+.nav-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.nav-btn-item{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--cor-branco);
+    background-color: var(--cor-verde);
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+
+/* Termina a navbar */
+
+.divContainer-form{
+    background-color: var(--cor-branco);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.form-title{
+    color: var(--cor-azul-marinho);
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 1rem 0 4rem 0;
+}
+
+.form-card{
+    width: 70%;
+    /* background-color: #014A4A; */
+}
+
+.form-card--title{
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    margin: 3rem;
+}
+
+.form-card--info{
+    font-size: 2rem;
+    letter-spacing: .15rem;
+    font-weight: 500;
+    margin: 0 0 4rem 0;
+    text-align: center;
+}
+
+.form-card--resposta-certa{
+    font-size: 2rem;
+    letter-spacing: .15rem;
+    font-weight: 500;
+    margin: 0 0 4rem 0;
+    text-align: center;
+    color: var(--cor-verde-esc);
+}
+
+.form-card--resposta-errada{
+    font-size: 2rem;
+    letter-spacing: .15rem;
+    font-weight: 500;
+    margin: 0 0 4rem 0;
+    text-align: center;
+    color: #BB2D3B;
+}
+
+.form-btn{
+    color: var(--cor-branco);
+    background-color: var(--cor-verde);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.8rem;
+    display: inline-block;
+    padding: 1.6rem 5rem;
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+    border-radius: 0.5rem;
+    transition: all .3s ease-in-out;
+    border: none;
+}
+
+.form-btn-group{
+    color: var(--cor-branco);
+    background-color: var(--cor-verde);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.8rem;
+    display: inline-block;
+    padding: 1.6rem 5rem;
+    /* margin-top: 2rem; */
+    /* margin-bottom: 7rem; */
+    border-radius: 0.5rem;
+    transition: all .3s ease-in-out;
+    border: none;
+}
+
+.form-btn:hover,.form-btn-group:hover{
+    transform: scale(1.05);
+}
+
+.pergunta{
+    width: 100%;
+}
+
+.pergunta-quest{
+    color: var(--cor-azul-marinho);
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0 0 2.5rem 0;
+    padding-bottom: 1rem;
+    border-bottom: .1rem solid;
+}
+
+.quest{
+    font-size: 2rem;
+    margin: 0 0 2.5rem 0;
+    color: var(--cor-azul-marinho);
+}
+
+.form-check{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.quest-div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-check-input {
+    appearance: none;
+    border-radius: 50%;
+    width: 1.6rem;
+    height: 1.6rem;
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+}
+
+.form-check-input:checked {
+    border: 6px solid var(--cor-verde);
+}
+
+.form-check-label{
+    font-size: 1.6rem;
+}
+
+.botoes{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 4rem 0 4rem 0;
+}
+
+
+/* Termina o form */
+
+.divContainer-footer{
+    background-color: var(--cor-cinza);
+}
+
+.footer{
+    padding: .3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-img{
+    width: 20%;
+}
+
+.footer-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-list--item{
+    list-style: none;
+}
+
+.footer-list--link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--cor-branco);
+    font-size: 1.8rem;
+}
+
+.copy{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+}
+
+
+.copy-info{
+    color: var(--cor-branco);
+    font-size: 1.6rem;
+}
+
+.copy-info a{
+    color: var(--cor-branco);
+    text-decoration: none;
+}
+
+@media (max-width: 2560) {
+    .nav{
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav{
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 768px){
+    .nav{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .hero{
+        flex-direction: column;
+    }
+    
+    .escola{
+        flex-direction: column-reverse;
+    }
+
+    .escola-texts--title{
+        text-align: center;
+        margin: 5rem 0 2rem ;
+    }
+
+    .escola-texts--info{
+        text-align: center;
+    }
+
+    .footer{
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .copy{
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .botoes{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 425px){
+    .nav{
+        flex-direction: column;   
+    }
+
+    .nav-list--link{
+        font-size: 1.6rem;
+        margin-top: 2rem;
+    }
+    
+    .hero{
+        flex-direction: column;
+    }
+
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-title{
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .hero-btn{
+        font-size: 1.6rem;
+        width: fit-content;
+    }
+
+    .contato-info{
+        text-align: center;
+    }
+
+    .contato-info-p{
+        text-align: center;
+    }
+}
