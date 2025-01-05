@@ -1,9 +1,10 @@
 <?php
 
+include 'conexao.php';
 session_destroy();
-// session_reset();
-// session_abort();
-// session_cache_expire();
+// close datebase php mysql
+$con -> close();
+
 
 header("Location: ../../index.php");
 
